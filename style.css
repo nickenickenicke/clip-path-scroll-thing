@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1000vh;
+}
+
+.scroll-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("images/clip1.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.two {
+  background-image: url("images/clip2.jpg");
+}
+
+.scroll-block:nth-of-type(2) {
+  clip-path: polygon(
+    0% 0%,
+    25% 0%,
+    25% 25%,
+    0% 25%,
+    0% 50%,
+    25% 50%,
+    25% 75%,
+    0% 75%
+  );
+}
+
+.scroll-block:nth-of-type(3) {
+  clip-path: polygon(
+    25% 25%,
+    50% 25%,
+    50% 50%,
+    25% 50%,
+    25% 75%,
+    50% 75%,
+    50% 100%,
+    25% 100%
+  );
+}
+
+.scroll-block:nth-of-type(4) {
+  clip-path: polygon(
+    50% 0%,
+    75% 0%,
+    75% 25%,
+    50% 25%,
+    50% 50%,
+    75% 50%,
+    75% 75%,
+    50% 75%
+  );
+}
+
+.scroll-block:nth-of-type(5) {
+  clip-path: polygon(
+    75% 25%,
+    100% 25%,
+    100% 50%,
+    75% 50%,
+    75% 75%,
+    100% 75%,
+    100% 100%,
+    75% 100%
+  );
+}
